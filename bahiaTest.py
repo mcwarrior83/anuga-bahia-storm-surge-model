@@ -182,11 +182,10 @@ region0 = anuga.Region(domain, center=center, radius=radius)
 fixed_inflow = anuga.Inlet_operator(domain, region0, Q=30.0) # need to find out mean flow rate
 """
 
-"""
+
 # ------------------------------- Evolution -------------------------------------------
 for t in domain.evolve(yieldstep=7200, duration=simulation_duration):
     domain.save_depth_frame(vmin=0.0, vmax=1.0)
     domain.print_timestepping_statistics()
 
 domain.make_depth_animation()
-"""
