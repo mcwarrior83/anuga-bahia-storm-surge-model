@@ -1,0 +1,8 @@
+__pycache__/
+.python_cache/
+_plot/
+*.sww
+*.png
+settings.json
+*.asc
+*.tif
